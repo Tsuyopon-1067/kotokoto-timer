@@ -1,5 +1,5 @@
 // 初期画面をChakra UI化．だいたい理解したら消してもOKなファイル
-import { Box, Button, Input } from "@chakra-ui/react";
+import { Box, Button, Input, Text } from "@chakra-ui/react";
 import { invoke } from "@tauri-apps/api/tauri";
 import { Form, Formik } from "formik";
 import { useState } from "react";
@@ -31,7 +31,7 @@ function Chutorial() {
           <Button type="submit">Greet</Button>
         </Form>
       </Formik>
-      <p>{greetMsg}</p>
+      <Text>{greetMsg}</Text>
     </Box>
   );
 }
